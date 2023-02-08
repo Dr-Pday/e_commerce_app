@@ -1,4 +1,3 @@
-import 'package:e_commerce_app/widgets/banner_slider.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,12 +10,41 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: SafeArea(
-            child: BannerSlider(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: SafeArea(
+          child: Center(
+            child: Column(
+              children: [
+                Container(
+                  width: 56,
+                  height: 56,
+                  decoration: ShapeDecoration(
+                    color: Colors.redAccent,
+                    shadows: const [
+                      BoxShadow(
+                        color: Colors.redAccent,
+                        blurRadius: 30,
+                        spreadRadius: -6,
+                        offset: Offset(0, 12),
+                      ),
+                    ],
+                    shape: ContinuousRectangleBorder(
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                const Text(
+                  'همه',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

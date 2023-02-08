@@ -37,7 +37,7 @@ class BannerSlider extends StatelessWidget {
             count: sliderCount,
             effect: const ExpandingDotsEffect(
                 expansionFactor: 5,
-                dotColor: CustomColor.appWhite,
+                dotColor: Colors.white,
                 activeDotColor: CustomColor.appBlue,
                 dotHeight: 5,
                 dotWidth: 5),

@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:e_commerce_app/constants/colors.dart';
 import 'package:e_commerce_app/screens/basket_screen.dart';
-import 'package:e_commerce_app/screens/category_screen.dart';
+
 import 'package:e_commerce_app/screens/home_screen.dart';
 import 'package:e_commerce_app/screens/product_list_screen.dart';
 import 'package:e_commerce_app/screens/profile_screen.dart';

@@ -7,7 +7,7 @@ class CategoryItemlist extends StatelessWidget {
   Widget build(BuildContext context) {
     int itemCount = 5;
     return Padding(
-      padding: const EdgeInsets.only(right: 44),
+      padding: const EdgeInsets.only(right: 34),
       child: ListView.builder(
         reverse: true,
         scrollDirection: Axis.horizontal,

@@ -15,15 +15,17 @@ class BannerSlider extends StatelessWidget {
         SizedBox(
           height: 177,
           child: PageView.builder(
+            reverse: true,
             controller: controller,
             itemCount: sliderCount,
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
-                  child: Container(
-                    color: Colors.redAccent,
+                  child: Image.asset(
+                    'assets/images/banner_iphone.png',
+                    fit: BoxFit.fill,
                   ),
                 ),
               );
